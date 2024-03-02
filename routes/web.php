@@ -23,7 +23,7 @@ Route::get('/', function () {
         'canRegister' => Route::has('register'),
         'laravelVersion' => Application::VERSION,
         'phpVersion' => PHP_VERSION,
-        'users' => \App\Models\User::all(),
+        'users' => User::all(),
     ]);
 });
 
